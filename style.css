@@ -455,3 +455,17 @@ button.normal:hover {
     border: 1px solid #08817969;
     border-radius: 7px;
 }
+
+.filters {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.filters select,
+.filters input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
