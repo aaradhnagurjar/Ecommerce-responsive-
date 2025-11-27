@@ -1,7 +1,4 @@
-const bar = document.getElementById('bar');
-const nav = document.getElementById('navbar');
-
-bar.onclick = () => {
-    nav.classList.toggle('active');
-};
-
+const emailField = document.getElementById("email-address-input");
+emailField.focus({
+  preventScroll: true,
+});
