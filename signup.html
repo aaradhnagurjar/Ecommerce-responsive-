@@ -1,0 +1,11 @@
+function signup() {
+  const user = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    pass: document.getElementById("pass").value
+  };
+
+  localStorage.setItem("user", JSON.stringify(user));
+  alert("Signup Successful");
+  window.location = "login.html";
+}
