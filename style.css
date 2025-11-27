@@ -472,3 +472,57 @@ img, video {
   .someDiv { width: 100%; }
 }
 
+/* Mobile Responsive Fix */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  #navbar {
+    display: none; /* Pehle simple hide (baad me hamburger add karenge) */
+  }
+
+  /* Hero Section */
+  #hero {
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  #hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Product / Collection banners */
+  .pro-container,
+  .banner-box,
+  .product-box,
+  .section-p1 {
+    display: block !important;
+    width: 100%;
+  }
+
+  .pro,
+  .banner-box {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  /* Newsletter */
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter input {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+  }
+  footer .col {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
