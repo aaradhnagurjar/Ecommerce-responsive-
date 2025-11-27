@@ -352,6 +352,24 @@
                 <input type="email" placeholder="Your email address" id="email-address-input">
                 <button>Sign Up</button>
               </div>
+
+                function loadCart() {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let html = "";
+
+  cart.forEach(item => {
+    html += `
+      <div class="cart-item">
+        <img src="${item.image}">
+        <h3>${item.name}</h3>
+        <p>Price: ₹${item.price}</p>
+        <p>Qty: ${item.qty}</p>
+      </div>`;
+  });
+
+  document.getElementById("cartContainer").innerHTML = html;
+}
+
                 <button class="add-to-cart-btn" onclick="addToCart(1)">Add to Cart</button>
 
                 <div class="filters">
@@ -438,5 +456,6 @@
           <script src="script.js"></script>  
     </body>
 </html>
+
 
 
