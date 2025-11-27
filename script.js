@@ -4,3 +4,10 @@ emailField.focus({
 
 });
 
+document.getElementById("mobile-menu").onclick = () => {
+  document.getElementById("navbar").style.display =
+    document.getElementById("navbar").style.display === "block"
+      ? "none"
+      : "block";
+};
+
