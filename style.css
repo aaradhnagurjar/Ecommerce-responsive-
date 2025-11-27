@@ -465,3 +465,10 @@ img, video {
   max-width: 100%;
   height: auto;
 }
+@media (max-width: 768px) {
+  /* mobile ke liye styles */
+  .nav { display: none; } /* ya hamburger menu dikhayein */
+  .content { padding: 10px; }
+  .someDiv { width: 100%; }
+}
+
