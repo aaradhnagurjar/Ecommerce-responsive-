@@ -455,3 +455,13 @@ button.normal:hover {
     border: 1px solid #08817969;
     border-radius: 7px;
 }
+
+.container {
+  width: 90%;     /* instead of fixed px value */
+  margin: auto;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
