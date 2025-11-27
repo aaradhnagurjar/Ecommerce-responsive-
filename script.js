@@ -37,3 +37,15 @@ function updateCartCount() {
 
 updateCartCount();
 
+let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+function addToWishlist(id) {
+  const product = products.find(p => p.id === id);
+
+  if (!wishlist.some(p => p.id === id)) {
+    wishlist.push(product);
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+  }
+}
+
+
