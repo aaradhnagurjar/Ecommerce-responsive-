@@ -11,182 +11,49 @@ body{font-family:Inter, 'League Spartan', Arial, sans-serif;color:#111;backgroun
 .container{width:90%;max-width:var(--container);margin:0 auto}
 
 /* Header */
-header{position:fixed;top:0;left:0;right:0;background:#eaeaea;z-index:50;box-shadow:0 5px 15px rgba(0,0,0,0.06)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+header{
+  position:fixed;
+  top:0;left:0;right:0;
+  background:#eaeaea;
+  z-index:50;
+  box-shadow:0 5px 15px rgba(0,0,0,0.06);
+  padding:12px 80px;
+  display:flex;
+  align-items:center;
+}
 .logo img{width:90px;height:auto;display:block}
 
-/* Nav */
-.nav ul{display:flex;gap:18px;list-style:none}
-.nav a{text-decoration:none;color:#111;font-weight:600;padding:8px 6px;display:inline-block}
-.nav a:hover,.nav a.active{color:var(--accent);}
-
-/* Header icons */
-.header-icons .icon{margin-left:12px;color:#111;font-size:18px}
-
-/* Mobile menu button (hidden desktop) */
-.mobile-menu{display:none;background:transparent;border:0;cursor:pointer;padding:6px}
-.mobile-menu .bar{display:block;height:3px;width:22px;background:#222;margin:4px 0;border-radius:3px}
-
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 80px;
-}
-
-/* Hero */
-#hero{padding-top:90px} /* leave space for fixed header */
-#hero .hero-inner{display:flex;align-items:center;gap:30px;min-height:70vh}
-.hero-text{flex:1}
-.hero-text h4{font-size:18px;color:#222;margin-bottom:6px}
-.hero-text h2{font-size:40px;margin:0 0 6px}
-.hero-text h1{font-size:44px;color:#6995b0;margin-bottom:12px}
-.hero-text p{margin-bottom:12px}
-.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:700}
-
-/* hero image */
-.hero-image img{width:460px;max-width:100%;border-radius:12px}
-
-/* features */
-#features{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:28px auto;align-items:center}
-.f-box{background:#fff;padding:16px;border-radius:10px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
-.f-box img{width:60px;height:60px;object-fit:contain;margin:6px auto 10px}
-.f-box h6{display:block;color:var(--accent);font-weight:700}
-
-/* Products */
-.product-section{padding:32px 0}
-.product-section h1{font-size:28px;text-align:center;margin-bottom:6px}
-.product-section p{color:var(--muted);text-align:center;margin-bottom:20px}
-.pro-collection{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;align-items:start}
-.product-cart{background:#fff;border-radius:18px;padding:14px;border:1px solid #eee;position:relative;box-shadow:0 6px 22px rgba(0,0,0,0.03)}
-.product-cart img{width:100%;border-radius:12px;display:block}
-.product-cart span{color:var(--muted);display:block;margin-top:8px}
-.product-cart h4{margin:6px 0 8px;font-size:16px}
-.stars{color:#e6ae2c;margin-bottom:6px}
-.price{color:var(--accent);font-weight:700}
-.buy{position:absolute;right:12px;bottom:12px;background:rgba(8,129,120,0.12);padding:12px;border-radius:50%;color:var(--accent)}
-
-/* off-banner */
-#off-banner{display:flex;align-items:center;justify-content:center;padding:40px 0;background-size:cover;background-image:url('b2.jpg');color:#fff;text-align:center;border-radius:12px;margin:20px auto}
-
-/* banners */
-#banners .big-banners{display:flex;gap:16px;margin-bottom:18px}
-.big-banners > div{flex:1;padding:26px;border-radius:12px;color:#fff;min-height:220px;display:flex;flex-direction:column;justify-content:center}
-.small-banners{display:flex;gap:12px}
-.small-banners > div{flex:1;padding:22px;border-radius:10px;color:#fff;min-height:140px;display:flex;flex-direction:column;justify-content:center}
-
-/* newsletter */
-#newsletter{padding:26px 0;background:#041e42;color:#fff;margin:26px 0;border-radius:12px}
-.newsletter-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.newsletter-text h3{font-size:22px;margin-bottom:6px}
-.newsletter-text h5{color:#b3b3b3}
-.newsletter-form{display:flex;gap:6px}
-.newsletter-form input{padding:14px;border-radius:8px;border:0;width:320px;max-width:100%;outline:none}
-.newsletter-form button{padding:12px 16px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:700;cursor:pointer}
-
-/* footer */
-footer{background:#ececec;padding:40px 0;margin-top:20px}
-#footer{display:flex;gap:28px;align-items:flex-start;justify-content:space-between}
-.col{flex:1;min-width:180px}
-#footer img{max-width:140px}
-#footer a{display:block;color:#6d6d6d;margin:6px 0;text-decoration:none}
-
-/* Small helpers */
-.section-p1{padding:24px 0}
-.section-m1{margin:20px 0}
-.banner-btn{padding:10px 14px;border-radius:8px;border:1px solid rgba(255,255,255,0.4);background:transparent;color:#fff;cursor:pointer}
-
-/* =========================
-   RESPONSIVE RULES
-   ========================= */
-
-/* Tablet */
-@media (max-width: 992px){
-  .hero-inner{flex-direction:column-reverse;gap:18px;padding:14px 0}
-  .hero-text h2{font-size:32px}
-  .hero-text h1{font-size:36px}
-  #features{grid-template-columns:repeat(3,1fr)}
-  .pro-collection{grid-template-columns:repeat(3,1fr)}
-  #footer{flex-direction:column;gap:18px}
-}
-
-/* Mobile */
-@media (max-width: 768px){
-  /* header */
-  .nav{position:fixed;top:64px;left:0;right:0;background:#fff;padding:12px;border-top:1px solid #eee;display:none}
-  .nav ul{flex-direction:column;gap:8px}
-  .mobile-menu{display:block}
-  .header-inner{gap:12px}
-
-  /* hero */
-  #hero{padding-top:80px}
-  .hero-inner{flex-direction:column-reverse;align-items:stretch}
-  .hero-image img{width:100%}
-  .hero-text h2{font-size:26px}
-  .hero-text h1{font-size:28px}
-
-  /* features */
-  #features{grid-template-columns:repeat(2,1fr);gap:10px}
-
-  /* products */
-  .pro-collection{grid-template-columns:repeat(2,1fr);gap:14px}
-  .product-cart{padding:12px}
-
-  /* newsletter */
-  .newsletter-inner{flex-direction:column;align-items:stretch;text-align:center}
-  .newsletter-form{justify-content:center;width:100%}
-
-  /* banners */
-  #banners .big-banners{flex-direction:column}
-  .small-banners{flex-direction:column}
-
-  /* footer */
-  #footer{padding:0}
-  .col{text-align:center}
-}
-
-/* Very small phones */
-@media (max-width:480px){
-  .pro-collection{grid-template-columns:1fr}
-  #features{grid-template-columns:repeat(2,1fr)}
-  .hero-text h2{font-size:22px}
-  .hero-text h1{font-size:24px}
-  .newsletter-form input{width:100%}
-}
-/* Base navbar always visible on Desktop */
+/* Nav - RIGHT SIDE FIX */
 #navbar {
-  display: flex;
-  gap: 30px;
-   margin-left: auto; 
+  display:flex;
+  align-items:center;
+  gap:22px;
+  margin-left:auto; /* 🔥 Push nav fully right */
+}
+#navbar li{list-style:none}
+#navbar a{
+  text-decoration:none;
+  color:#111;
+  font-weight:600;
+  padding:10px 6px;
+}
+#navbar a:hover,#navbar a.active{color:var(--accent)}
+
+/* Cart icon right align */
+#navbar .icon{
+  font-size:18px;
 }
 
-/* Mobile View */
-@media (max-width: 768px) {
-  #navbar {
-    position: fixed;
-    right: -300px;
-    top: 0;
-    flex-direction: column;
-    background: #fff;
-    width: 250px;
-    height: 100vh;
-    padding-top: 80px;
-    transition: 0.3s;
-  }
-
-  #mobile {
-    display: block;
-  }
-
-  #close {
-    display: block;
-  }
+/* Mobile menu button */
+#mobile{
+  display:none;
+  font-size:26px;
+  cursor:pointer;
+  margin-left:10px;
 }
 
-/* Show menu when active */
-#navbar.active {
-  right: 0;
-}
-
-
-
+/* HERO */
+#hero{padding-top:100px}
+#hero .hero-inner{display:flex;align-items:center;gap:30px;min-height:70vh}
+.hero-text h2{font-size:40px}
+.
