@@ -3,6 +3,17 @@ emailField.focus({
   preventScroll: true,
 
 });
+function checkUser() {
+  const logged = localStorage.getItem("loggedIn");
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  if (logged === "true") {
+    document.getElementById("username").innerText = "Hello, " + user.name;
+  }
+}
+
+checkUser();
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(id) {
@@ -25,3 +36,4 @@ function updateCartCount() {
 }
 
 updateCartCount();
+
