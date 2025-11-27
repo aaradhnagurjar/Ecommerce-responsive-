@@ -146,3 +146,37 @@ footer{background:#ececec;padding:40px 0;margin-top:20px}
   .hero-text h1{font-size:24px}
   .newsletter-form input{width:100%}
 }
+/* Base navbar always visible on Desktop */
+#navbar {
+  display: flex;
+  gap: 30px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  #navbar {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    flex-direction: column;
+    background: #fff;
+    width: 250px;
+    height: 100vh;
+    padding-top: 80px;
+    transition: 0.3s;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #close {
+    display: block;
+  }
+}
+
+/* Show menu when active */
+#navbar.active {
+  right: 0;
+}
+
