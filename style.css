@@ -150,6 +150,7 @@ footer{background:#ececec;padding:40px 0;margin-top:20px}
 #navbar {
   display: flex;
   gap: 30px;
+   margin-left: auto; 
 }
 
 /* Mobile View */
@@ -179,4 +180,5 @@ footer{background:#ececec;padding:40px 0;margin-top:20px}
 #navbar.active {
   right: 0;
 }
+
 
