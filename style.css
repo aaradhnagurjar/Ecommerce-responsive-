@@ -27,6 +27,13 @@ header{position:fixed;top:0;left:0;right:0;background:#eaeaea;z-index:50;box-sha
 .mobile-menu{display:none;background:transparent;border:0;cursor:pointer;padding:6px}
 .mobile-menu .bar{display:block;height:3px;width:22px;background:#222;margin:4px 0;border-radius:3px}
 
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+}
+
 /* Hero */
 #hero{padding-top:90px} /* leave space for fixed header */
 #hero .hero-inner{display:flex;align-items:center;gap:30px;min-height:70vh}
@@ -180,5 +187,6 @@ footer{background:#ececec;padding:40px 0;margin-top:20px}
 #navbar.active {
   right: 0;
 }
+
 
 
