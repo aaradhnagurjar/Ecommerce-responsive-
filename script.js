@@ -1,4 +1,7 @@
-const emailField = document.getElementById("email-address-input");
-emailField.focus({
-  preventScroll: true,
+
+const nav = document.getElementById('nav-menu');
+const toggle = document.getElementById('nav-toggle');
+
+toggle.addEventListener('click', () => {
+  nav.classList.toggle('show');
 });
