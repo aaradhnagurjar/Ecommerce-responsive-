@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: "League Spartan", sans-serif;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 h1{
     font-size: 50px;
@@ -120,6 +124,24 @@ button.normal:hover {
     padding-right: 20px;
     transition: 0.3s ease;
 }
+/* Around line 120 */
+.product-card {
+  width: 23%; /* for desktop */
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 48%; /* 2 per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%; /* 1 per row */
+  }
+}
+
 
 .header-list-icon a:hover,
 .header-list-nav ul a.active {
@@ -183,6 +205,28 @@ button.normal:hover {
     color:#e11b3f;
     padding: 14px 65px 14px 65px;
 }
+/* Around line 200 */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+}
+
 #features{
     display:flex;
     align-items: center;
@@ -461,5 +505,6 @@ button.normal:hover {
     border: 1px solid #08817969;
     border-radius: 7px;
 }
+
 
 
