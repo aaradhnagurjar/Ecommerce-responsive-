@@ -39,6 +39,12 @@ p{
 .section-m1{
     margin: 40px 0;
 }
+/* Line 50-60 */
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 button.normal{
     font-size: 14px;
@@ -455,4 +461,5 @@ button.normal:hover {
     border: 1px solid #08817969;
     border-radius: 7px;
 }
+
 
